@@ -7,19 +7,61 @@
 </head>
 <body>
     <script>
-       let number1 = +prompt('birinchi san engiz');
-       let number2 = +prompt('ekinch san engiz');
+      //  let number1 = +prompt('birinchi san engiz');
+      //  let number2 = +prompt('ekinch san engiz');
 
-       if( number1>number2){
-        alert(' 1=san ulken'  )
-      }else if(number1<number2){
-        alert('ekinchi san ulken' );
-      }else if(number1==number2 ){
-        alert('sandar ten')
+      //  if( number1>number2){
+      //   alert(' 1=san ulken'  )
+      // }else if(number1<number2){
+      //   alert('ekinchi san ulken' );
+      // }else if(number1==number2 ){
+      //   alert('sandar ten')
+      // }
+      // else{
+      //   alert('jaramdy san engiz')
+      // } 7.11.2024 hw косымшада орындадым
+
+      
+      // let a =+prompt('1san');
+      // let b= +prompt('2san');
+      // let number = prompt('calculate');
+      // switch (number) {
+      //   case '+':
+      //     alert(a+b )
+      //     break;
+      //     case '-':
+      //       alert(a-b);
+      //       break;
+      //       case '/':
+      //         alert(a/b);
+      //         break;
+      //         case '*':
+      //           alert(a*b);
+      //           break;
+      
+      //   default:
+      //     alert('input correct operations')
+      //     break;
+      // } //калкулятор 
+
+      let a = +prompt('1san');
+      let b = +prompt('2san');
+      let c = +prompt('3san');
+      let max;
+      switch (true) {
+        case (a>=b && a>=c):
+        max = a;  
+          break;
+          case (a<=b && b>=c):
+            max = b;
+        break;
+        case (c>=a && c>=b):
+          max = c;
+        default:
+         max = a ;
+          break;
       }
-      else{
-        alert('jaramdy san engiz')
-      }
+      alert('en ulken man'+  max);
 
     </script>
 </body>
