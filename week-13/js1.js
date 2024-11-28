@@ -65,17 +65,107 @@
     // console.log(fruits);
     
 //hw-26.11.2024--
-let san=['Ronaldu','Zidan','Neimar','Venzema'];
-san [1] ='Messi';
-san [4]='Remma'
-san[5]='ERni'
-console.log(san);
- if(san.length>5){
-        console.log('qop');
-    }else  {       
-        console.log('az');
+// let san=['Ronaldu','Zidan','Neimar','Venzema'];
+// san [1] ='Messi';
+// san [4]='Remma'
+// san[5]='ERni'
+// console.log(san);
+//  if(san.length>5){
+//         console.log('qop');
+//     }else  {       
+//         console.log('az');
+        
+//     }
+
+//Arrays  Methods -27.11.2024---
+// let massiv=[1,3,5,10]
+// 1-push-массивтин артына элемент косады!
+// massiv.push('islam','sanjar')
+// console.log(massiv);
+//2-pop-массивтеги сонгы эелементти алып тастайды
+    //massiv.pop()
+   // console.log(massiv); //[1,3,5,10,'ислам']
+    
+
+// //3-srift()-массивтеги бастапкы элементти алып тастайды
+// let shiftElement=massiv.shift()
+// console.log('алып тасталынган бастапкы элемпент'+shiftElement);
+// console.log(massiv); //[3,5,10,'islam']
+
+
+// // 4-unshift()-масссивтин басына жана элемент косады
+// massiv.unshift('jemis','amjiilt')
+// console.log(massiv); //['jemis','aamjiilt','1','3','5','10','islam']
+
+// //5-slice()-массивти белгили бир болигин коширип алады!!!
+// let jemis=['banan','alma','shie']
+// // let qoshiru=jemis.slice(1,3)
+// // console.log(qoshiru);// alma ,shie
+
+// //6-splice-массивке элемент косады немесе жояды!
+// jemis.splice(1,0,'almurt','orik') // оширмей косады
+// console.log('qosilgan:',jemis); //banan keein qosiladi
+// jemis.splice(1,1,'apelsin') //оширип косады
+// console.log(jemis);
+
+
+
+
+// тапсырма-1---
+// let i=0;
+// let jemis=['banan','alma','shie']
+
+// let san=+prompt('qansha jemis qosasin?');
+
+
+// while(i<san){
+//     let jemister=prompt('qandai jemis');
+//     i++;
+//     jemis.push(jemister)
+//     console.log(jemis);
+    
+// }
+
+
+//тапсырма-2---
+// let san=[10,20,30,40];
+
+// san.push=(50)
+// console.log(san);
+
+// san.shift()
+// console.log(san);
+
+// san.splice(1,1,25);
+// console.log(san);
+
+// let qosher=san.slice(2,3)
+// console.log(qosher);
+
+//hw--28.112024-massiv
+let sandar=[];
+
+while(true){
+    let num =+prompt('san engiz')
+if(num%2==0){
+    sandar.unshift(num)
+    }else {
+
+        sandar.push(num)
+    }
+
+    if(num==0){
+        break;
         
     }
+
+}
+console.log('massiv:',sandar);
+console.log('massiv uzindik:',sandar.length);
+
+
+
+
 
 
 
