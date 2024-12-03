@@ -142,28 +142,100 @@
 // let qosher=san.slice(2,3)
 // console.log(qosher);
 
-//hw--28.112024-massiv
-let sandar=[];
+//hw--28.112024-massiv----
+// let sandar=[];
 
-while(true){
-    let num =+prompt('san engiz')
-if(num%2==0){
-    sandar.unshift(num)
-    }else {
+// while(true){
+//     let num =+prompt('san engiz')
+// if(num%2==0){
+//     sandar.unshift(num)
+//     }else {
 
-        sandar.push(num)
-    }
+//         sandar.push(num)
+//     }
 
-    if(num==0){
-        break;
+//     if(num==0){
+//         break;
         
-    }
+//     }
 
-}
-console.log('massiv:',sandar);
-console.log('massiv uzindik:',sandar.length);
+// }
+// console.log('massiv:',sandar);
+// console.log('massiv uzindik:',sandar.length);
+
+//Iterating Over Arrays--28.11.2024 -----
+
+let numbers=[1,2,3,4];
+//мысал-1
+//for(let i=0; i<numbers.length;i++){
+ //   console.log(numbers[i]);
+    //}
+//мысал-2---
+
+// for(let num of numbers){
+//     console.log(num);
+    
+// }
+//jup sandy jinau
+// let even=[]
+// for(num of numbers){
+//     if(num % 2==0){
+// even.push(num)
+//     }
+// }
+// console.log(even);
+// //мысал3
+// numbers.forEach(function(san){
+//     console.log(san);
+    
+// })
+// numbers.forEach(san=>{if(san %2==0){
+//         console.log(san);
+//         }})
+
+//         //мысал-4
+       
+// let double = numbers.map(san=>san*2);
+// console.log(double);
+
+// let double= numbers.map(san=>{
+//     if(san%2==0){return san;}
+// })
+// console.log(double);
+// //кыскартылган тури if else---
+// let massiv=numbers.map(san=>san%2==0? 'jup':'tak')
+
+// console.log(massiv);
+
+// let city=['almaty','astana','qaraganda']
+
+// let qala=city.map(san1=>san1+'.k' )
+// console.log(qala);
+
+// //мысал-5-- filter()-suzgi
+
+// let filters=numbers.filter(san=>!(san%2))//jup san bolu kerek 2-adis
+// console.log(filters);
+
+// soz=['amjilt','cyber','Array','sanm']
+
+// let alar=soz.filter(soz=>soz.toLowerCase().includes('a'))
+// console.log(alar);
+
+// //мысал-6--reduce() barlik elementti jinaktap barin qosady
+
+// let san= numbers.reduce((total,num)=>total+num,0);
+// console.log(san);
 
 
+let aty =+prompt('student sany');
+let baga=[];
+
+let bagalary =baga.reduce((san,num)=>san+num,0)
+console.log(bagalary);
+
+let filters=baga.filter(num=>num.num(85))
+console.log(filters);
 
 
 
