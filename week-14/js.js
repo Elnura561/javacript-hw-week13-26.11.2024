@@ -394,53 +394,150 @@
 // const us={...user,city:'Almaty'}
 // console.log(us);
 
-//   //тапсырма-5---
-
-//   let adam=[{
-//     name:'Magauia',
-//     age:30,
-//     city:'China'
-//   },
-//   {
-//     name:'Berik',
-//     age:25,
-//     city:'Almaty'
-//   },
-
-//   {
-//     name:'Elnura',
-//     age:37,
-//     city:'Almaty'
-//   },
- 
-// ]
-let oqu ={
-  oquchi:{
-  name:'Aslan',
-  math:85,
-  city:'Almaty',
-  mektep:'35 mektep'
-},
-oquchilar:{
-  name:'Sungat',
-  math:100,
-  city:'Astana',
-  county:'Kazakhstan'
-
+//   //тапсырма-5--- адам косу /лог шыгару
+let course ={
+  course_aty:"Amjilt Cyber School",
+  top:"24/4",
+  students: [
+    {
+      name:"Mahaoya",
+      age:30,
+      score:90
+    },
+    {
+      name:"Berik",
+      age:22,
+      score:100
+    },
+    {
+      name:"Alimzhan",
+      age:15,
+      score:70
+    }
+  ],
+  barliginKorset: function(){
+      return this.students
+  },
+  adamQos:function(){
+      let aty = prompt("Atyndy jaz")
+      let jas = +prompt("Jasyndy jaz")
+      let baga = +prompt("Bagandy jaz")
+      this.students.push({name:aty,age:jas,score:baga})
+      alert("Siz adam qostynyz! Keremet!")
+      console.log(this.students);
+  }
 }
+
+let areket = prompt("Qandai areket jasaisyn? (koru / qosu)")
+
+//KORU -> koru
+//KoRu -> koru
+//koru -> koru
+
+if(areket.toLowerCase() == "koru"){
+  console.log(course.barliginKorset())
+}else if (areket.toLowerCase() == "qosu"){
+   course.adamQos()
+}else{
+  alert("Bizde ondai areket joq!")
 }
-let{name,math,mektep,city,county}=oqu.oquchilar;
-console.log(`Aty:${name}`);
-console.log(`Baga:${math}`);
-console.log(`Qala:${city}`);
-console.log(`Memeleket:${county}`);
+
+//hw-5.12.2024---
+// let oqu ={
+//   oquchi:{
+//   name:'Aslan',
+//   math:85,
+//   city:'Almaty',
+//   mektep:'35 mektep'
+// },
+// oquchilar:{
+//   name:'Sungat',
+//   math:100,
+//   city:'Astana',
+//   county:'Kazakhstan'
+
+// }
+// }
+// let{name,math,mektep,city,county}=oqu.oquchilar;
+// console.log(`Aty:${name}`);
+// console.log(`Baga:${math}`);
+// console.log(`Qala:${city}`);
+// console.log(`Memeleket:${county}`);
 
 
-let classA=['asan','Arman','Nuraiym'];
-let classB=['Sungat','Kanat','Islam'];
-let clases=['Direktor',...classA,...classB,'Mugelim'];
+// let classA=['asan','Arman','Nuraiym'];
+// let classB=['Sungat','Kanat','Islam'];
+// let clases=['Direktor',...classA,...classB,'Mugelim'];
 
-console.log('Tolik tizim:',clases);
+// console.log('Tolik tizim:',clases);
 
 
+      //практика--5,12,2024 ---class
 
+//       let student=[{
+//         name:'Beibaris',
+//         age:25,
+//         score:90
+//       },
+//     {
+//       name:'Sungat',
+//       age:10,
+//       score:100
+//     },
+//     {
+//       name:'Simba',
+//       age:25,
+//       score:85
+//     }
+//     ]
+//     student.forEach(function(stu){
+//       console.log(stu.name);
+      
+//     })
+
+//     //сурак-2
+//     console.log(student.filter(st=>st.age<=20));
+    
+//     //сурак-3--
+
+//     let num=student.map(san=>(san.score*1.1).toFixed(2))
+//     console.log(num);
+   
+//     //сурак-4--
+//     //  let sum;
+//     //  let stu=> student[i]  stu= object
+//     //   i=>index index={0,1,2,...}
+//     //  sum = sum+stu.score
+//     let upai=student.reduce((sum,stu)=>sum+stu.score,0);
+    
+//     console.log(upai);
+
+// // сурак-5---ен жогары вал
+
+//     // max is maxium number
+//     let maxUpay=student[0].score
+//     //  max = 90
+   
+// for(let i=1;i<student.length;i++){
+//   //  i = 1
+//   if(maxUpay<student[i].score){
+//     //  loop 1
+//     // i = 1
+//     // student[1].score => 100
+//     //  maxUpay => 90 
+//     //  maxUpay < 100  true
+//     // loop 2
+//     // i = 2
+//     //  student[2].score => 85
+//     // maxUpay => 100
+//     // maxUpay < 85 false 
+//     maxUpay=student[i].score
+//     //  loop 1
+//     // maxUpay = 100
+//     // loop 2
+//     // do nothing
+//   }
+// }  
+// console.log(maxUpay);
+
+    
