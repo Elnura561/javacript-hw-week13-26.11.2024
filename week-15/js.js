@@ -35,15 +35,64 @@
 
           //HW-11.12.2024years----
 
-let id=document.querySelector('#contener')
-contener.textContent='Homework Day1 DOM' 
+// let id=document.querySelector('#contener')
+// contener.textContent='Homework Day1 DOM' 
 
-let text=document.getElementById('text')
-text.textContent='Ozinin tolyk aty-joniniz';
+// let text=document.getElementById('text')
+// text.textContent='Ozinin tolyk aty-joniniz';
 
-let hobby =document.getElementsByClassName('my')
-hobby[0].textContent='Hobby1';
-hobby[1].textContent='Hobby2';
-hobby[2].textContent='Hobby3'
+// let hobby =document.getElementsByClassName('my')
+// hobby[0].textContent='Hobby1';
+// hobby[1].textContent='Hobby2';
+// hobby[2].textContent='Hobby3'
+
+// //   CLASS-11.12.2024
+// let taqiryp =document.getElementById('title')
+// taqiryp.addEventListener("click",function(){
+//     taqiryp.style.color="red"
+//     taqiryp.style.fontSize='50px'
+// })
+// console.log(taqiryp.textContent);
+
+// let bastyn=document.getElementById('button')
+
+// function buttonClick(){
+//     taqiryp.textContent='Islam ozgertti'
+//     bastyn.style.backgroundColor='cadetblue'
+// //     alert('Sen meni bastyn!')
+// }
+
+// let qorap =document.getElementById('box')
+
+// qorap.addEventListener('mouseenter',function(){
+//     qorap.style.borderRadius='50%'
+//     qorap.style.transitionDuration='1s'
+//      qorap.innerHTML='<h3>Uraaaa</h3>'
+//      qorap.style.textAlign='center'
+// })
+// qorap.addEventListener('mouseleave',function(){
+//     qorap.style.borderRadius='0px'
+//     qorap.style.transitionDuration='1s'
+//    qorap.innerHTML='<h3>opss</h3>'
+    
+// })
+
+  //tapsirma-2
+  let boxes=document.getElementById('box')
+ boxes.addEventListener("mouseenter",function(){
+     boxes.style.backgroundColor="lightblue"
+ })
+
+ //tapsirma-3
+
+ let element =document.getElementsByClassName('itemList')
+ console.log(element);
+ for(let el of element)
+{
+    el.addEventListener('click',function(){
+        el.style.color='red'
+        el.style.fontSize='20px'
+    })
+} 
 
 
