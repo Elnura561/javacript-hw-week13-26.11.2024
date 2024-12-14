@@ -77,22 +77,24 @@
     
 // })
 
-  //tapsirma-2
-  let boxes=document.getElementById('box')
- boxes.addEventListener("mouseenter",function(){
-     boxes.style.backgroundColor="lightblue"
- })
+//   //tapsirma-2
+//   let boxes=document.getElementById('box')
+//  boxes.addEventListener("mouseenter",function(){
+//      boxes.style.backgroundColor="lightblue"
+//  })
 
- //tapsirma-3
+//  //tapsirma-3
 
- let element =document.getElementsByClassName('itemList')
- console.log(element);
- for(let el of element)
-{
-    el.addEventListener('click',function(){
-        el.style.color='red'
-        el.style.fontSize='20px'
-    })
-} 
+//  let element =document.getElementsByClassName('itemList')
+//  console.log(element);
+//  for(let el of element)
+// {
+//     el.addEventListener('click',function(){
+//         el.style.color='red'
+//         el.style.fontSize='20px'
+//     })
+// } 
+
+
 
 
