@@ -50,53 +50,93 @@
 //     paragrab.textContent=inputText.value
 // })
 
-//hw-1212.2024---
+   // тапсырма -1----
 
- //N=1 select
-let change=document.getElementById('change')
+//    let Form=document.getElementById('signupForm')
+//   let text=document.getElementById('formMessage')
 
-change.addEventListener('change',function(){
-console.log('tandalgan top:', change.value);
+// Form.addEventListener('submit',function(event){
+//   event.preventDefault();
+//   let Name=document.getElementById('username');
 
-})
- //N=2 textarea -submit - jasau----
+//   text.textContent=Name. value
+// console.log(Name.value);
+
+// })
+// Form.addEventListener('submit',function(event){
+// event.preventDefault();
+
+// let email=document.getElementById('email').value;
+// if(!email.includes('@')){
+//   text.textContent='sizde @ jok'
+
+// }else{
+//   console.log(email.value);
+
+// }
+
+
+
+// })
+// Form.addEventListener('submit',function(event ){
+// let password=document.getElementById('password').value
+// if(password<7 && password.includes('number'))
+//   { text.textContent=password.value}else{
+//     console.log(password.value);
+//   }
+//   })
+
+
+
+
+
+  //hw-1212.2024---
+
+//  //N=1 select
+// let change=document.getElementById('change')
+
+// change.addEventListener('change',function(){
+// console.log('tandalgan top:', change.value);
+
+// })
+//  //N=2 textarea -submit - jasau----
  
- let form=document.getElementById('form')
-let text=document.getElementById('text')
- form.addEventListener('submit',function(event){
+//  let form=document.getElementById('form')
+// let text=document.getElementById('text')
+//  form.addEventListener('submit',function(event){
 
-  event.preventDefault()
-  let comment=document.getElementById('comment').value 
-  if(comment.length>15){
-   text.textContent='kate pikir kaldidiniz 15 simboldan aspau kerek'
-    text.style.color='red'
-  }else {
-    text.textContent='duris pikir kaldiniz'
+//   event.preventDefault()
+//   let comment=document.getElementById('comment').value 
+//   if(comment.length>15){
+//    text.textContent='kate pikir kaldidiniz 15 simboldan aspau kerek'
+//     text.style.color='red'
+//   }else {
+//     text.textContent='duris pikir kaldiniz'
     
-  }
- })
+//   }
+//  })
 
- // N=3 range-bagalau random chigaru-----
- let range=document.getElementById('range');
- range.addEventListener('input',function(){
-  type.textContent=range.value
- })
+//  // N=3 range-bagalau random chigaru-----
+//  let range=document.getElementById('range');
+//  range.addEventListener('input',function(){
+//   type.textContent=range.value
+//  })
 
- form.addEventListener('submit',function(event){
-  event.preventDefault()
-  if(comment.length>15){
-    console.log('qate:tym uzin');
+//  form.addEventListener('submit',function(event){
+//   event.preventDefault()
+//   if(comment.length>15){
+//     console.log('qate:tym uzin');
     
-  }else{
-    console.log('Tandalgan top:',change.value);
-    console.log('pikir:',comment.value);
-    console.log('bagalau;',range.value);
-    console.log('Form tekserildy');
+//   }else{
+//     console.log('Tandalgan top:',change.value);
+//     console.log('pikir:',comment.value);
+//     console.log('bagalau;',range.value);
+//     console.log('Form tekserildy');
     
     
     
-  }
- })
+//   }
+//  })
 
 
 
