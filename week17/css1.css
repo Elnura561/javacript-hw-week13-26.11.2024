@@ -1,0 +1,11 @@
+.btn-styled{
+    background-color: cadetblue;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
