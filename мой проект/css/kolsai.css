@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5722dc;
+    height: 100px;
+    width: 100%;
+
+}
+
+.logo {
+    width: 100px;
+    margin-top: 20px;
+    float: left;
+    padding-left: 70px;
+
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nav {
+    display: inline;
+    float: right;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.nav:hover {
+    color: #a81719;
+    text-decoration: underline;
+}
+
+/* главный текст */
+.text {
+    width: 40%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 50px;
+    padding-left: 120px;
+    padding-top: 160px;
+}
+
+.img-text {
+    width: 650px;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    left: 670px;
+    bottom: 410px;
+    box-shadow: -15px -10px 5px -5px rgba(34, 60, 80, 16);
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+}
+
+/*gallery-foto12-transform*/
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+    position: relative;
+    bottom: 150px;
+
+}
+
+.gallery-img {
+    transform: scale(1.1);
+}
+
+.gallery-img:hover {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+h6 {
+    position: relative;
+    bottom: 250px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(58, 43, 226);
+}
+
+/* img-text */
+
+.image-box-img {
+    border-radius: 70px;
+
+}
+
+.image-box {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    object-fit: cover;
+    color: rgb(10, 10, 12);
+    background-color: #a1c9e5;
+}
+
+p {
+    width: 60%;
+}
+
+.flag {
+    position: relative;
+    left: 750px;
+    bottom: 150px;
+    width: 30px;
+    height: 20px;
+}
+
+footer {
+    font-size: 20px;
+    background-color: rgb(212, 229, 180);
+    padding: 50px;
+    width: 100%;
+    margin-top: 130px;
+}
+
+
+.map {
+    padding-right: 100px;
+}
+
+.ul {
+    padding-left: 50px;
+
+}
+
+.froot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+h5 {
+    padding-left: 600px;
+    font-size: 35px;
+}
